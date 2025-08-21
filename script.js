@@ -502,13 +502,6 @@ function createCard(data) {
             "./images/Construction Heavy Machinery.png",
         },
         {
-          title: "Galvanized Steel",
-          description:
-            "Long-lasting and corrosion-resistant. Perfect for exterior structures, roofing, and exposed frameworks.",
-          imgAlt: "Galvanized Steel",
-          imgSrc: "./images/GalvanizedSteel.png",
-        },
-        {
           title: "Construction Equipment",
           description:
             "Tools that get the job done—from mixers to compactors, every tool matters in timely, efficient construction.",
@@ -675,21 +668,6 @@ function createCard(data) {
         },
       ],
       [
-        {
-          imgSrc: "images/INDIAN-RAILWAYS.jpeg",
-          alt: "Software for concrete manufacturing process",
-          text: "Indian Railways",
-        },
-        {
-          imgSrc: "images/NHAI.jpeg",
-          alt: "Environmental services related to concrete industry",
-          text: "NHAI",
-        },
-        {
-          imgSrc: "images/NHIDCL.jpeg",
-          alt: "Sustainable concrete materials and practices",
-          text: "NHEDCL Projects",
-        },
         {
           imgSrc: "images/INNOVATIONS-IN-NHAI.jpeg",
           alt: "Concrete equipment available for rent",
