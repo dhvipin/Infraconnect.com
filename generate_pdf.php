@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <a href="user_details.pdf" download>
         <button>Download PDF</button>
     </a>
-    <a href="index.php">
+    <a href="index.html">
         <button>Back to Home</button>
     </a>
 </body>

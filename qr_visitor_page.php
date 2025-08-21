@@ -459,10 +459,10 @@ session_destroy();
     <!-- Menu Items -->
     <ul class="flex flex-col items-center space-y-24 text-white font-semibold text-lg">
       <li class="transform rotate-90 origin-center">
-        <a href="./index.php" class="hover:text-indigo-400 transition">Home</a>
+        <a href="./index.html" class="hover:text-indigo-400 transition">Home</a>
       </li>
       <li class="transform rotate-90 origin-center">
-        <a href="./event_registration.php" class="hover:text-indigo-400 transition">Event_Registrations</a>
+        <a href="./event_registration.html" class="hover:text-indigo-400 transition">Event_Registrations</a>
       </li>
       <li class="transform rotate-90 py-12 origin-center">
         <a href="./Stall_Booking.php" class="hover:text-indigo-400 transition">Stall Booking</a>
@@ -488,10 +488,10 @@ session_destroy();
     <ul class="space-y-28  text-white font-semibold text-lg">
 
       <li class="transform -rotate-90 origin-center">
-        <a href="./index.php" class="hover:text-indigo-400 transition p-10">Home</a>
+        <a href="./index.html" class="hover:text-indigo-400 transition p-10">Home</a>
       </li>
       <li class="transform -rotate-90 origin-center">
-        <a href="./event_registration.php" class="hover:text-indigo-400 transition">Event_Registrations</a>
+        <a href="./event_registration.html" class="hover:text-indigo-400 transition">Event_Registrations</a>
       </li>
       <li class="transform -rotate-90 origin-center">
         <a href="./Stall_Booking.php" class="hover:text-indigo-400 transition">Stall Booking</a>
@@ -516,8 +516,8 @@ session_destroy();
   <div id="mobile-menu"
     class="hidden md:hidden fixed top-16 left-0 w-full bg-black bg-opacity-90 backdrop-blur-md z-20">
     <ul class="flex flex-col items-center space-y-4 py-6 text-white font-semibold text-lg">
-      <li><a href="./index.php" class="hover:text-indigo-400 transition">Home</a></li>
-      <li><a href="./event_registration.php" class="hover:text-indigo-400 transition">Event_Registrations</a></li>
+      <li><a href="./index.html" class="hover:text-indigo-400 transition">Home</a></li>
+      <li><a href="./event_registration.html" class="hover:text-indigo-400 transition">Event_Registrations</a></li>
       <li><a href="./Stall_Booking.php" class="hover:text-indigo-400 transition">Stall Booking</a></li>
     </ul>
   </div>
@@ -581,7 +581,7 @@ session_destroy();
      Quick Links
     </h3>
     <ul class="text-xs leading-5 space-y-1">
-     <li><a href="./index.php">
+     <li><a href="./index.html">
       Home</a>
      </li>
      <li><a href="./RegistrationPage.html">
@@ -593,7 +593,7 @@ session_destroy();
      <li><a href="./Conference.html">
       Conference</a>
      </li>
-     <li><a href="./index.php">
+     <li><a href="./index.html">
       Contact Us</a>
      </li>
     </ul>

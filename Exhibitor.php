@@ -433,7 +433,7 @@
     <!-- Menu Items -->
     <ul class="flex flex-col items-center space-y-16 text-white font-semibold text-lg">
       <li class="transform -rotate-90 origin-center">
-        <a href="./index.php" class="hover:text-indigo-400 transition">Home</a>
+        <a href="./index.html" class="hover:text-indigo-400 transition">Home</a>
       </li>
       <li class="transform -rotate-90 origin-center">
         <a href="./Exhibitor.html" class="hover:text-indigo-400 transition">Exhibitor</a>
@@ -471,14 +471,14 @@
 
     <!-- Menu Items -->
     <ul class="space-y-16  text-white font-semibold text-lg">
-      <!-- <li class="transform -rotate-90 origin-center"><a href="./index.php" class="hover:text-indigo-400 transition">Home</a></li>
+      <!-- <li class="transform -rotate-90 origin-center"><a href="./index.html" class="hover:text-indigo-400 transition">Home</a></li>
       <li class="transform -rotate-90 origin-center"><a href="./Exhibitor.html" class="hover:text-indigo-400 transition">Exhibitor</a></li>
       <li class="transform -rotate-90 origin-center"><a href="./Visitor.html" class="hover:text-indigo-400 transition">Visitor</a></li> -->
       <li class="transform -rotate-90 origin-center"><a href="/" class="hover:text-indigo-400 transition">ABC</a></li>
       <li class="transform -rotate-90 origin-center"><a href="/" class="hover:text-indigo-400 transition">ABC</a></li>
       <li class="transform -rotate-90 origin-center"><a href="/" class="hover:text-indigo-400 transition">ABC</a></li>
       <li class="transform -rotate-90 origin-center">
-        <a href="./index.php" class="hover:text-indigo-400 transition">Home</a>
+        <a href="./index.html" class="hover:text-indigo-400 transition">Home</a>
       </li>
       <li class="transform -rotate-90 origin-center">
         <a href="./Exhibitor.html" class="hover:text-indigo-400 transition">Exhibitor</a>
@@ -509,7 +509,7 @@
   <div id="mobile-menu"
     class="hidden md:hidden fixed top-16 left-0 w-full bg-black bg-opacity-90 backdrop-blur-md z-20">
     <ul class="flex flex-col items-center space-y-4 py-6 text-white font-semibold text-lg">
-      <li><a href="./index.php" class="hover:text-indigo-400 transition">Home</a></li>
+      <li><a href="./index.html" class="hover:text-indigo-400 transition">Home</a></li>
       <li><a href="./Exhibitor.html" class="hover:text-indigo-400 transition">Exhibitor</a></li>
       <li><a href="./Visitor.html" class="hover:text-indigo-400 transition">Visitor</a></li>
       <li><a href="/" class="hover:text-indigo-400 transition">ABC</a></li>
@@ -580,7 +580,7 @@
      Quick Links
     </h3>
     <ul class="text-xs leading-5 space-y-1">
-     <li><a href="./index.php">
+     <li><a href="./index.html">
       Home</a>
      </li>
      <li><a href="./Exhibitor.html">
@@ -598,7 +598,7 @@
      <li><a href="./Conference.html">
       Conference</a>
      </li>
-     <li><a href="./index.php">
+     <li><a href="./index.html">
       Contact Us</a>
      </li>
     </ul>

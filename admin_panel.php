@@ -32,7 +32,7 @@ if (!isset($_SESSION["admin"])) {
      <div class="flex items-center space-x-8">
       <ul class="hidden md:flex space-x-8 text-white font-semibold text-lg">
        <li>
-        <a class="hover:text-indigo-400 transition-colors duration-300" href="./index.php">
+        <a class="hover:text-indigo-400 transition-colors duration-300" href="./index.html">
          Home
         </a>
        </li>
@@ -64,7 +64,7 @@ if (!isset($_SESSION["admin"])) {
    <div class="md:hidden bg-black bg-opacity-10 backdrop-blur-md" id="mobile-menu" style="display:none;">
     <ul class="flex flex-col space-y-4 px-6 py-4 text-white font-semibold text-lg">
      <li>
-      <a class="block hover:text-indigo-400 transition-colors duration-300" href="./index.php">
+      <a class="block hover:text-indigo-400 transition-colors duration-300" href="./index.html">
        Home
       </a>
      </li>
