@@ -617,7 +617,7 @@
   </div>
   <div class="max-w-[800px] w-full flex items-center mt-2 space-x-2 px-1">
    <input class="w-12 h-7 border border-gray-300 rounded-sm text-xs text-center text-gray-700" readonly="" type="text" value="1"/>
-   <button class="bg-[#002366] font-semibold text-white px-4 py-2 rounded-sm cursor-pointer select-none" style="background-color:#b49cc8">
+   <button class="bg-[#0145f2] font-semibold text-white px-4 py-2 rounded-sm cursor-pointer select-none" style="background-color:#b49cc8">
     Book Now!
    </button>
   </div>

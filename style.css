@@ -20,7 +20,7 @@ body {
   --ElectricBlueColor: #0145f2;
   --CanvasColor: #EDf1f5;
   --NeonRedColor: #ff1818;
-  --accent: dodgerblue
+  /* --accent: dodgerblue */
     /*for text box borders*/
   ;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 .TextColor-blue {
-  color: var(--primaryColor);
+  color: var(--ElectricBlueColor);
 }
 
 .SecondTextColor {
