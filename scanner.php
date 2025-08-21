@@ -104,7 +104,7 @@
     Join India's Most Comprehensive B2B Trade Show and Propel Your Business to New Heights!
    </h2>
   </section>
-  <footer class="bg-gradient-to-b from-[#5194c8] to-[#002366] text-white py-10 px-6 sm:px-12 flex flex-col sm:flex-row justify-between max-w-full mx-auto">
+  <footer class="bg-gradient-to-b bg-[#0145f2] text-white py-10 px-6 sm:px-12 flex flex-col sm:flex-row justify-between max-w-full mx-auto">
    <div class="mb-8 sm:mb-0 sm:w-1/3">
     <h3 class="font-bold text-lg mb-4">
      Quick Links

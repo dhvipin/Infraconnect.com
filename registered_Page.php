@@ -651,7 +651,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <a href="./Visitor.html" class="hover:text-indigo-400 transition">Visitor</a>
       </li>
       <li class="transform rotate-90 origin-center">
-        <a href="./Stall_Booking.php" class="hover:text-indigo-400 transition">Stall Booking</a>
+        <a href="./Stall_Booking.html" class="hover:text-indigo-400 transition">Stall Booking</a>
       </li>
 
     </ul>
@@ -686,7 +686,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <a href="./Visitor.html" class="hover:text-indigo-400 transition">Visitor</a>
       </li>
       <li class="transform -rotate-90 origin-center">
-        <a href="./Stall_Booking.php" class="hover:text-indigo-400 transition">Stall Booking</a>
+        <a href="./Stall_Booking.html" class="hover:text-indigo-400 transition">Stall Booking</a>
       </li>
 
     </ul>
@@ -739,7 +739,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     Join India's Most Comprehensive B2B Trade Show and Propel Your Business to New Heights!
    </h2>
   </section>
-  <footer class="bg-gradient-to-b from-[#5194c8] to-[#002366] text-white py-10 px-6 sm:px-12 flex flex-col sm:flex-row justify-between max-w-full mx-auto">
+  <footer class="bg-gradient-to-b bg-[#0145f2] text-white py-10 px-6 sm:px-12 flex flex-col sm:flex-row justify-between max-w-full mx-auto">
    <div class="mb-8 sm:mb-0 sm:w-1/3">
     <h3 class="font-bold text-lg mb-4">
      Quick Links
@@ -753,7 +753,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
      <li><a href="./Visitor.html">
       Visitors</a>
      </li>
-     <li><a href="./Stall_Booking.php">
+     <li><a href="./Stall_Booking.html">
       Stall Booking</a>
      </li>
      <li><a href="./admin_login.php">
