@@ -178,44 +178,14 @@ textarea::-webkit-scrollbar {
 textarea::-webkit-scrollbar-thumb {
   background-color: #babecc;
   border-radius: 4px;
-}
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        .img-Size {
+}    
+.img-Size {
             width: 100%;
             aspect-ratio: 1 / 1;
             /* makes logos square */
             object-fit: contain;
             border-radius: 8px;
         }
-
-
 
         /* ===== TOP LOGO SLIDER (scrolls left) ===== */
         /* ===== TOP LOGO SLIDER (continuous left scroll) ===== */
@@ -828,12 +798,8 @@ textarea::-webkit-scrollbar-thumb {
             <li class="transform rotate-90 py-12 origin-center">
                 <a href="./Stall_Booking.php" class="hover:text-indigo-400 transition">Stall Booking</a>
             </li>
-
         </ul>
-
-
-
-    </nav>
+ </nav>
 
     <!-- left side nav bar herer -->
 
@@ -889,7 +855,7 @@ textarea::-webkit-scrollbar-thumb {
         <div class="tab-buttons">
             <button class="tab  active " onclick="showForm('visitor')">Visitor</button>
             <button class="tab" onclick="showForm('exhibition')">Exhibition</button>
-            <button class="tab" onclick="showForm('sponsor')">Sponsors</button>
+            <button class="tab" onclick="showForm('sponsor')">Sponsor</button>
         </div>
         <div class="forms">
 
@@ -900,30 +866,31 @@ textarea::-webkit-scrollbar-thumb {
                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label for="firstName" class="block text-gray-700 font-medium mb-1">First Name <span
-                                class="text-red-600">*</span></label>
+                                class="text-red-600">#</span></label>
                         <input type="text" id="firstName" name="firstName" placeholder="Enter First name" required
                             class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
                     </div>
                     <div>
                         <label for="middleName" class="block text-gray-700 font-medium mb-1">Middle Name <span
-                                class="text-red-600"></span></label>
+                                class="text-red-600">#</span></label>
                         <input type="text" id="middleName" name="middleName" placeholder="Enter Middle name"
                             class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
                     </div>
                     <div>
                         <label for="lastName" class="block text-gray-700 font-medium mb-1">Last Name <span
-                                class="text-red-600">*</span></label>
+                                class="text-red-600">#</span></label>
                         <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name" required
                             class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
                     </div>
                     <div>
                         <label for="designation" class="block text-gray-700 font-medium mb-1"> <span
-                                class="text-red-600"></span></label>
-
+                                class="text-red-600">#</span></label>
+                        <input type="text" id="designation" name="designation" placeholder="Designation" required
+                            class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
                     </div>
                     <div>
                         <label for="companyName" class="block text-gray-700 font-medium mb-1">Company Name <span
-                                class="text-red-600">*</span></label>
+                                class="text-red-600">#</span></label>
                         <input type="text" id="companyName" name="companyName" placeholder="Company name" required
                             class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
                     </div>
@@ -940,8 +907,14 @@ textarea::-webkit-scrollbar-thumb {
                             class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
                     </div>
                     <div>
-                        <label for="emailId" class="block text-gray-700 font-medium mb-1">Email ID <span
-                                class="text-red-600">*</span></label>
+                        <label for="contactno" class="block text-gray-700 font-medium mb-1">Business Contact No.<span
+                                class="text-red-600">#</span></label>
+                        <input type="tel" id="contactno" name="contactno" placeholder="+91 91XXX 0XXXX" required
+                            class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                    </div>
+                    <div>
+                        <label for="emailId" class="block text-gray-700 font-medium mb-1">Business Email ID <span
+                                class="text-red-600">#</span></label>
                         <input type="email" id="emailId" name="emailId" placeholder="your.email@example.com" required
                             class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
                     </div>
@@ -951,6 +924,7 @@ textarea::-webkit-scrollbar-thumb {
                         <input type="text" id="location" name="location"
                             placeholder="Registered Address (as on GST Certificate)" required
                             class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                        <p class="text-gray-500 text-sm mt-1">( Post Exhibition Magazine will be sent here.)</p>
                     </div>
                     <div>
                         <label for="state" class="block text-gray-700 font-medium mb-1">State <span
@@ -1007,10 +981,10 @@ textarea::-webkit-scrollbar-thumb {
                         class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 resize-y focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
                 </div>
                 <div>
-                    <label for="businessProductsServices" class="block text-gray-700 font-medium mb-1">Business Products
+                    <label for="businessProductsServices" class="block text-gray-700 font-medium mb-1">Business Products /
                         Services<span class="text-red-600">*</span></label>
                     <textarea id="businessProductsServices" name="businessProductsServices" rows="4"
-                        placeholder="Mention the list of products / Services you provide." required
+                        placeholder="Mention the list of Products / Services you provide." required
                         class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 resize-y focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
                 </div>
                 <div>
@@ -1074,11 +1048,18 @@ textarea::-webkit-scrollbar-thumb {
                         Rudra Events private policy.<span class="text-red-600">*</span>
                     </label>
                 </div>
+                <div class="flex items-start space-x-3">
+                    <input type="checkbox" id="consent" name="consent" required
+                        class="neu-input mt-1 h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500" />
+                    <label for="consent" class="text-gray-700 text-sm leading-relaxed">
+                       I declare that the information provided is true to the bestof the My Knowledge. ICE2025 may cancel my registration if found otherwise.<span class="text-red-600">*</span>
+                    </label>
+                </div>
                 <div class="flex items-start space-x-1">
                     <input type="checkbox" id="consent2" name="consent2" required
                         class="neu-input mt-1 h- w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500" />
                     <label for="consent" class="text-gray-700 text-sm leading-relaxed">
-                        Registration Approval is subject to verification & serving by the management.<span
+                        Registration is subject to mandatory review & final approval by the registration committee.<span
                             class="text-red-600">*</span>
                     </label>
                 </div>
