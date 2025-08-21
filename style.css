@@ -314,7 +314,7 @@ article p:first-letter {
   position: relative;
   cursor: pointer;
   background: #fff;
-  box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+  box-shadow: 0 4px 6px rgba(102, 78, 237, 0.1);
 }
 
 .card3 img {
@@ -327,7 +327,7 @@ article p:first-letter {
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(26, 98, 233, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
