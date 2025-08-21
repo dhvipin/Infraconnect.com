@@ -204,15 +204,21 @@
 
 
 
+<<<<<<< HEAD
         .img-Size {
+=======
+textarea::-webkit-scrollbar-thumb {
+  background-color: #babecc;
+  border-radius: 4px;
+}    
+.img-Size {
+>>>>>>> 37b405f1b316caf4b6c7571353f022ac530b205a
             width: 100%;
             aspect-ratio: 1 / 1;
             /* makes logos square */
             object-fit: contain;
             border-radius: 8px;
         }
-
-
 
         /* ===== TOP LOGO SLIDER (scrolls left) ===== */
         /* ===== TOP LOGO SLIDER (continuous left scroll) ===== */
@@ -825,12 +831,8 @@
             <li class="transform rotate-90 py-12 origin-center">
                 <a href="./Stall_Booking.html" class="hover:text-indigo-400 transition">Stall Booking</a>
             </li>
-
         </ul>
-
-
-
-    </nav>
+ </nav>
 
     <!-- left side nav bar herer -->
 
@@ -886,7 +888,7 @@
         <div class="tab-buttons">
             <button class="tab  active " onclick="showForm('visitor')">Visitor</button>
             <button class="tab" onclick="showForm('exhibition')">Exhibition</button>
-            <button class="tab" onclick="showForm('sponsor')">Sponsors</button>
+            <button class="tab" onclick="showForm('sponsor')">Sponsor</button>
         </div>
         <div class="forms">
 
@@ -916,7 +918,8 @@
                     <div>
                         <label for="designation" class="block text-gray-700 font-medium mb-1"> <span
                                 class="text-red-600"></span></label>
-
+                        <input type="text" id="designation" name="designation" placeholder="Designation" required
+                            class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
                     </div>
                     <div>
                         <label for="companyName" class="block text-gray-700 font-medium mb-1">Company Name <span
