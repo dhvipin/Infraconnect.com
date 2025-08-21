@@ -25,6 +25,9 @@ body {
   ;
 }
 
+.backgourndColor{
+  background-color: var(--ElectricBlueColor);
+}
 .bgColorFor-all {
   background-color: var(--CanvasColor);
 }
