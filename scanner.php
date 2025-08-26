@@ -26,7 +26,7 @@
      <div class="flex items-center space-x-8">
       <ul class="hidden md:flex space-x-8 text-white font-semibold text-lg">
        <li>
-        <a class="hover:text-indigo-400 transition-colors duration-300" href="./index.html">
+        <a class="hover:text-indigo-400 transition-colors duration-300" href="./index.php">
          Home
         </a>
        </li>
@@ -58,7 +58,7 @@
    <div class="md:hidden bg-black bg-opacity-10 backdrop-blur-md" id="mobile-menu" style="display:none;">
     <ul class="flex flex-col space-y-4 px-6 py-4 text-white font-semibold text-lg">
      <li>
-      <a class="block hover:text-indigo-400 transition-colors duration-300" href="./index.html">
+      <a class="block hover:text-indigo-400 transition-colors duration-300" href="./index.php">
        Home
       </a>
      </li>
@@ -104,13 +104,13 @@
     Join India's Most Comprehensive B2B Trade Show and Propel Your Business to New Heights!
    </h2>
   </section>
-  <footer class="bg-gradient-to-b bg-[#0145f2] text-white py-10 px-6 sm:px-12 flex flex-col sm:flex-row justify-between max-w-full mx-auto">
+  <footer class="bg-gradient-to-b from-[#5194c8] to-[#002366] text-white py-10 px-6 sm:px-12 flex flex-col sm:flex-row justify-between max-w-full mx-auto">
    <div class="mb-8 sm:mb-0 sm:w-1/3">
     <h3 class="font-bold text-lg mb-4">
      Quick Links
     </h3>
     <ul class="text-xs leading-5 space-y-1">
-     <li><a href="./index.html">
+     <li><a href="./index.php">
       Home</a>
      </li>
      <li><a href="./RegistrationPage.html">
@@ -122,7 +122,7 @@
      <li><a href="./Conference.html">
       Conference</a>
      </li>
-     <li><a href="./index.html">
+     <li><a href="./index.php">
       Contact Us</a>
      </li>
     </ul>

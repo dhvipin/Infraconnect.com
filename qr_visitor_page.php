@@ -10,7 +10,7 @@ if (!isset($_SESSION['user_id'])) {
 $userId = $_SESSION['user_id'];
 
 // Get user data (optional, for displaying name, etc.)
-$result = $conn->query("SELECT firstName, socialPhone FROM visitors_data WHERE id = $userId");
+$result = $conn->query("SELECT name, phone FROM visitors WHERE id = $userId");
 $user = $result->fetch_assoc();
 
 $qrFile = "qrcodes/user_$userId.png";
@@ -33,12 +33,6 @@ session_destroy();
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
   <style>
-  
-  #pdf-content {
-  page-break-inside: avoid;
-}
-  
-  
     .img-Size {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -459,13 +453,13 @@ session_destroy();
     <!-- Menu Items -->
     <ul class="flex flex-col items-center space-y-24 text-white font-semibold text-lg">
       <li class="transform rotate-90 origin-center">
-        <a href="./index.html" class="hover:text-indigo-400 transition">Home</a>
+        <a href="./index.php" class="hover:text-indigo-400 transition">Home</a>
       </li>
       <li class="transform rotate-90 origin-center">
-        <a href="./event_registration.html" class="hover:text-indigo-400 transition">Event_Registrations</a>
+        <a href="./event_registration.php" class="hover:text-indigo-400 transition">Event_Registrations</a>
       </li>
       <li class="transform rotate-90 py-12 origin-center">
-        <a href="./Stall_Booking.html" class="hover:text-indigo-400 transition">Stall Booking</a>
+        <a href="./Stall_Booking.php" class="hover:text-indigo-400 transition">Stall Booking</a>
       </li>
 
     </ul>
@@ -488,13 +482,13 @@ session_destroy();
     <ul class="space-y-28  text-white font-semibold text-lg">
 
       <li class="transform -rotate-90 origin-center">
-        <a href="./index.html" class="hover:text-indigo-400 transition p-10">Home</a>
+        <a href="./index.php" class="hover:text-indigo-400 transition p-10">Home</a>
       </li>
       <li class="transform -rotate-90 origin-center">
-        <a href="./event_registration.html" class="hover:text-indigo-400 transition">Event_Registrations</a>
+        <a href="./event_registration.php" class="hover:text-indigo-400 transition">Event_Registrations</a>
       </li>
       <li class="transform -rotate-90 origin-center">
-        <a href="./Stall_Booking.html" class="hover:text-indigo-400 transition">Stall Booking</a>
+        <a href="./Stall_Booking.php" class="hover:text-indigo-400 transition">Stall Booking</a>
       </li>
 
     </ul>
@@ -516,9 +510,9 @@ session_destroy();
   <div id="mobile-menu"
     class="hidden md:hidden fixed top-16 left-0 w-full bg-black bg-opacity-90 backdrop-blur-md z-20">
     <ul class="flex flex-col items-center space-y-4 py-6 text-white font-semibold text-lg">
-      <li><a href="./index.html" class="hover:text-indigo-400 transition">Home</a></li>
-      <li><a href="./event_registration.html" class="hover:text-indigo-400 transition">Event_Registrations</a></li>
-      <li><a href="./Stall_Booking.html" class="hover:text-indigo-400 transition">Stall Booking</a></li>
+      <li><a href="./index.php" class="hover:text-indigo-400 transition">Home</a></li>
+      <li><a href="./event_registration.php" class="hover:text-indigo-400 transition">Event_Registrations</a></li>
+      <li><a href="./Stall_Booking.php" class="hover:text-indigo-400 transition">Stall Booking</a></li>
     </ul>
   </div>
 <!------------------------------------------------------- end new navbar ------------------------------------------------------>
@@ -554,7 +548,7 @@ session_destroy();
           ICE Expo 2025 – InfraConnect India
          </span>
         </p>
-  <p>Thank you</p>
+  <p>Thank you, <strong><?php echo $user['name']; ?></strong></p>
   <p>Registered QR code:</p>
   <img src="<?php echo $qrFile; ?>" alt="QR Code" />
   <p class="text-xs">for any further Queries, Please Connect Below.<br>Mobile : +91 9XXXX 9XXXX<br>Email Address: info.registrations@rudraevents.com</p>
@@ -575,7 +569,7 @@ session_destroy();
     Join India's Most Comprehensive B2B Trade Show and Propel Your Business to New Heights!
    </h2>
   </section>
-  <footer class="bg-gradient-to-b bg-[#0145f2] text-white py-10 px-6 sm:px-12 flex flex-col sm:flex-row justify-between max-w-full mx-auto">
+  <footer class="bg-gradient-to-b from-[#5194c8] to-[#8eb9db] text-white py-10 px-6 sm:px-12 flex flex-col sm:flex-row justify-between max-w-full mx-auto">
    <div class="mb-8 sm:mb-0 sm:w-1/3">
     <h3 class="font-bold text-lg mb-4">
      Quick Links
@@ -636,7 +630,8 @@ session_destroy();
   </button>
 </div>
 <!--------------------------------------- End Footer Section ------------------------------------------------------->
-<script>function downloadPDF() {
+<script>
+function downloadPDF() {
   const element = document.getElementById('pdf-content'); // 👈 target only content div
   const opt = {
     margin: 0.2,
@@ -650,6 +645,7 @@ session_destroy();
   html2pdf().set(opt).from(element).save();
 }
 </script>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const menuBtn = document.getElementById("menu-btn");

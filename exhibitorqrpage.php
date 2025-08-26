@@ -11,7 +11,7 @@ if (!isset($_SESSION['exhibition_user_id']) || !is_numeric($_SESSION['exhibition
 $userId = intval($_SESSION['exhibition_user_id']); // Convert to integer for safety
 
 // Use prepared statement to avoid SQL errors and injection
-$stmt = $conn->prepare("SELECT firstName, socialPhone FROM sponsors WHERE id = ?");
+$stmt = $conn->prepare("SELECT firstName, socialPhone FROM exhibitors WHERE id = ?");
 $stmt->bind_param("i", $userId);
 $stmt->execute();
 $result = $stmt->get_result();
@@ -44,13 +44,12 @@ session_destroy();
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com">  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-      <style>
-      
-      
-      #pdf-content {
+    <style>
+    
+    #pdf-content {
   page-break-inside: avoid;
 }
-      
+    
     .img-Size {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -139,8 +138,7 @@ session_destroy();
 }
 </style>
 </head>
-<body>
-    <!------------------------------------------- end scroll icons ---------------------------------------------------->
+<body>    <!------------------------------------------- end scroll icons ---------------------------------------------------->
   <!-- ===== TOP SCROLLER ===== -->
   <div class="icons-slider-left">
     <div class="scroll-track">

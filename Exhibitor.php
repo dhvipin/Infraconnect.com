@@ -433,7 +433,7 @@
     <!-- Menu Items -->
     <ul class="flex flex-col items-center space-y-16 text-white font-semibold text-lg">
       <li class="transform -rotate-90 origin-center">
-        <a href="./index.html" class="hover:text-indigo-400 transition">Home</a>
+        <a href="./index.php" class="hover:text-indigo-400 transition">Home</a>
       </li>
       <li class="transform -rotate-90 origin-center">
         <a href="./Exhibitor.html" class="hover:text-indigo-400 transition">Exhibitor</a>
@@ -442,7 +442,7 @@
         <a href="./Visitor.html" class="hover:text-indigo-400 transition">Visitor</a>
       </li>
       <li class="transform -rotate-90 py-12 origin-center">
-        <a href="./Stall_Booking.html" class="hover:text-indigo-400 transition">Stall Booking</a>
+        <a href="./Stall_Booking.php" class="hover:text-indigo-400 transition">Stall Booking</a>
       </li>
       <!-- <li class="transform -rotate-90 origin-center">
         <a href="/" class="hover:text-indigo-400 transition">ABC</a>
@@ -471,14 +471,14 @@
 
     <!-- Menu Items -->
     <ul class="space-y-16  text-white font-semibold text-lg">
-      <!-- <li class="transform -rotate-90 origin-center"><a href="./index.html" class="hover:text-indigo-400 transition">Home</a></li>
+      <!-- <li class="transform -rotate-90 origin-center"><a href="./index.php" class="hover:text-indigo-400 transition">Home</a></li>
       <li class="transform -rotate-90 origin-center"><a href="./Exhibitor.html" class="hover:text-indigo-400 transition">Exhibitor</a></li>
       <li class="transform -rotate-90 origin-center"><a href="./Visitor.html" class="hover:text-indigo-400 transition">Visitor</a></li> -->
       <li class="transform -rotate-90 origin-center"><a href="/" class="hover:text-indigo-400 transition">ABC</a></li>
       <li class="transform -rotate-90 origin-center"><a href="/" class="hover:text-indigo-400 transition">ABC</a></li>
       <li class="transform -rotate-90 origin-center"><a href="/" class="hover:text-indigo-400 transition">ABC</a></li>
       <li class="transform -rotate-90 origin-center">
-        <a href="./index.html" class="hover:text-indigo-400 transition">Home</a>
+        <a href="./index.php" class="hover:text-indigo-400 transition">Home</a>
       </li>
       <li class="transform -rotate-90 origin-center">
         <a href="./Exhibitor.html" class="hover:text-indigo-400 transition">Exhibitor</a>
@@ -487,7 +487,7 @@
         <a href="./Visitor.html" class="hover:text-indigo-400 transition">Visitor</a>
       </li>
       <li class="transform -rotate-90 origin-center">
-        <a href="./Stall_Booking.html" class="hover:text-indigo-400 transition">Stall Booking</a>
+        <a href="./Stall_Booking.php" class="hover:text-indigo-400 transition">Stall Booking</a>
       </li>
 
     </ul>
@@ -509,7 +509,7 @@
   <div id="mobile-menu"
     class="hidden md:hidden fixed top-16 left-0 w-full bg-black bg-opacity-90 backdrop-blur-md z-20">
     <ul class="flex flex-col items-center space-y-4 py-6 text-white font-semibold text-lg">
-      <li><a href="./index.html" class="hover:text-indigo-400 transition">Home</a></li>
+      <li><a href="./index.php" class="hover:text-indigo-400 transition">Home</a></li>
       <li><a href="./Exhibitor.html" class="hover:text-indigo-400 transition">Exhibitor</a></li>
       <li><a href="./Visitor.html" class="hover:text-indigo-400 transition">Visitor</a></li>
       <li><a href="/" class="hover:text-indigo-400 transition">ABC</a></li>
@@ -574,13 +574,13 @@
     Join India's Most Comprehensive B2B Trade Show and Propel Your Business to New Heights!
    </h2>
   </section>
-  <footer class="bg-gradient-to-b bg-[#0145f2] text-white py-10 px-6 sm:px-12 flex flex-col sm:flex-row justify-between max-w-full mx-auto">
+  <footer class="bg-gradient-to-b from-[#5194c8] to-[#002366] text-white py-10 px-6 sm:px-12 flex flex-col sm:flex-row justify-between max-w-full mx-auto">
    <div class="mb-8 sm:mb-0 sm:w-1/3">
     <h3 class="font-bold text-lg mb-4">
      Quick Links
     </h3>
     <ul class="text-xs leading-5 space-y-1">
-     <li><a href="./index.html">
+     <li><a href="./index.php">
       Home</a>
      </li>
      <li><a href="./Exhibitor.html">
@@ -589,7 +589,7 @@
      <li><a href="./Visitor.html">
       Visitors</a>
      </li>
-     <li><a href="./Stall_Booking.html">
+     <li><a href="./Stall_Booking.php">
       Stall Booking</a>
      </li>
      <li><a href="./admin_login.php">
@@ -598,7 +598,7 @@
      <li><a href="./Conference.html">
       Conference</a>
      </li>
-     <li><a href="./index.html">
+     <li><a href="./index.php">
       Contact Us</a>
      </li>
     </ul>

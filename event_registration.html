@@ -317,7 +317,7 @@ textarea::-webkit-scrollbar-thumb {
             /* background: #007bff; */
             color: white;
 
-            background-color: #002366;
+            background-color: #0145f2;
         }
 
         .forms {
@@ -796,7 +796,7 @@ textarea::-webkit-scrollbar-thumb {
                 <a href="./event_registration.html" class="hover:text-indigo-400 transition">Event_Registrations</a>
             </li>
             <li class="transform rotate-90 py-12 origin-center">
-                <a href="./Stall_Booking.php" class="hover:text-indigo-400 transition">Stall Booking</a>
+                <a href="./Stall_Booking.html" class="hover:text-indigo-400 transition">Stall Booking</a>
             </li>
         </ul>
  </nav>
@@ -820,7 +820,7 @@ textarea::-webkit-scrollbar-thumb {
                 <a href="./event_registration.html" class="hover:text-indigo-400 transition">Event_Registrations</a>
             </li>
             <li class="transform -rotate-90 origin-center">
-                <a href="./Stall_Booking.php" class="hover:text-indigo-400 transition">Stall Booking</a>
+                <a href="./Stall_Booking.html" class="hover:text-indigo-400 transition">Stall Booking</a>
             </li>
 
         </ul>
@@ -844,7 +844,7 @@ textarea::-webkit-scrollbar-thumb {
             <li><a href="./index.html" class="hover:text-indigo-400 transition">Home</a></li>
             <li><a href="./event_registration.html" class="hover:text-indigo-400 transition">Event_Registrations</a>
             </li>
-            <li><a href="./Stall_Booking.php" class="hover:text-indigo-400 transition">Stall Booking</a></li>
+            <li><a href="./Stall_Booking.html" class="hover:text-indigo-400 transition">Stall Booking</a></li>
         </ul>
     </div>
     <!------------------------------------------------------- end new navbar ------------------------------------------------------>
@@ -854,10 +854,13 @@ textarea::-webkit-scrollbar-thumb {
 
         <div class="tab-buttons">
             <button class="tab  active " onclick="showForm('visitor')">Visitor</button>
-            <button class="tab" onclick="showForm('exhibition')">Exhibition</button>
+            <button class="tab" onclick="showForm('exhibition')">Exhibitor</button>
             <button class="tab" onclick="showForm('sponsor')">Sponsor</button>
         </div>
-        <p class="text-gray-500 text-sm mt-1">It is mandatory to fill up (*) marked ones. Incomplete forms will be rejected.</p></br>
+        <p class="text-gray-500 text-sm mt-1">It is mandatory to fill up (<span
+                                class="text-red-600"> * </span>) marked ones. Incomplete forms will be rejected.</p>
+        <p class="text-gray-500 text-sm mt-1">The symbol Marked with (<span
+                                class="text-red-600"># </span>) shall be printed on your Badge.</p></br>
         <div class="forms">
 
             <form id="visitor" class="form-box active-form" action="configVisitor.php" action="registered_Page.php"
@@ -884,11 +887,7 @@ textarea::-webkit-scrollbar-thumb {
                             class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
                     </div>
                     <div>
-<<<<<<< HEAD
-                        <label for="designation" class="block text-gray-700 font-medium mb-1"> <span
-=======
                         <label for="designation" class="block text-gray-700 font-medium mb-1">Designation <span
->>>>>>> b6c4b98adfcfa2a0825b81894160ba565f74bf74
                                 class="text-red-600">#</span></label>
                         <input type="text" id="designation" name="designation" placeholder="Designation" required
                             class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
@@ -1056,24 +1055,15 @@ textarea::-webkit-scrollbar-thumb {
                 <div class="flex items-start space-x-3">
                     <input type="checkbox" id="consent" name="consent" required
                         class="neu-input mt-1 h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500" />
-<<<<<<< HEAD
                     <label for="consent" class="text-gray-700 text-sm leading-relaxed">
                        I declare that the information provided is true to the bestof the My Knowledge. ICE2025 may cancel my registration if found otherwise.<span class="text-red-600">*</span>
-=======
-                    <label for="consent" class="text-gray-700 text-sm leading-relaxed">I declare that the information provided is true to the best of my Knowledge. ICE2025 may cancel my registration if found otherwise.
-                       <span class="text-red-600">*</span>
->>>>>>> b6c4b98adfcfa2a0825b81894160ba565f74bf74
                     </label>
                 </div>
                 <div class="flex items-start space-x-1">
                     <input type="checkbox" id="consent2" name="consent2" required
                         class="neu-input mt-1 h- w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500" />
                     <label for="consent" class="text-gray-700 text-sm leading-relaxed">
-<<<<<<< HEAD
                         Registration is subject to mandatory review & final approval by the registration committee.<span
-=======
-                        Registration is Subject to mandatory review & final approval by the registration committee.<span
->>>>>>> b6c4b98adfcfa2a0825b81894160ba565f74bf74
                             class="text-red-600">*</span>
                     </label>
                 </div>
@@ -1088,7 +1078,7 @@ textarea::-webkit-scrollbar-thumb {
 
             <form id="exhibition" class="form-box space-y-6" action="configExhibitor.php" method="POST"
                 enctype="multipart/form-data" novalidate>
-                <h2>Exhibition</h2>
+                <h2>Exhibitor</h2>
                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label for="firstName" class="block text-gray-700 font-medium mb-1">First Name <span
@@ -1109,11 +1099,7 @@ textarea::-webkit-scrollbar-thumb {
                             class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
                     </div>
                     <div>
-<<<<<<< HEAD
-                        <label for="designation" class="block text-gray-700 font-medium mb-1"> <span
-=======
                         <label for="designation" class="block text-gray-700 font-medium mb-1">Designation <span
->>>>>>> b6c4b98adfcfa2a0825b81894160ba565f74bf74
                                 class="text-red-600">#</span></label>
                         <input type="text" id="designation" name="designation" placeholder="Designation" required
                             class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
@@ -1154,11 +1140,7 @@ textarea::-webkit-scrollbar-thumb {
                         <input type="text" id="location" name="location"
                             placeholder="Registered Address (as on GST Certificate)" required
                             class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-<<<<<<< HEAD
                         <p class="text-gray-500 text-sm mt-1">( Post Exhibition Magazine will be sent here.)</p>
-=======
-                             <p class="text-gray-500 text-sm mt-1">( Post Exhibition Magazine will be sent here.)</p>
->>>>>>> b6c4b98adfcfa2a0825b81894160ba565f74bf74
                     </div>
                     <div>
                         <label for="state" class="block text-gray-700 font-medium mb-1">State <span
@@ -1215,11 +1197,7 @@ textarea::-webkit-scrollbar-thumb {
                         class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 resize-y focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
                 </div>
                 <div>
-<<<<<<< HEAD
                     <label for="businessProductsServices" class="block text-gray-700 font-medium mb-1">Business Products /
-=======
-                    <label for="businessProductsServices" class="block text-gray-700 font-medium mb-1">Business Products / 
->>>>>>> b6c4b98adfcfa2a0825b81894160ba565f74bf74
                         Services<span class="text-red-600">*</span></label>
                     <textarea id="businessProductsServices" name="businessProductsServices" rows="4"
                         placeholder="Mention the list of Products / Services you provide." required
@@ -1289,24 +1267,15 @@ textarea::-webkit-scrollbar-thumb {
                 <div class="flex items-start space-x-3">
                     <input type="checkbox" id="consent" name="consent" required
                         class="neu-input mt-1 h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500" />
-<<<<<<< HEAD
                     <label for="consent" class="text-gray-700 text-sm leading-relaxed">
                        I declare that the information provided is true to the bestof the My Knowledge. ICE2025 may cancel my registration if found otherwise.<span class="text-red-600">*</span>
-=======
-                    <label for="consent" class="text-gray-700 text-sm leading-relaxed">I declare that the information provided is true to the best of my Knowledge. ICE2025 may cancel my registration if found otherwise.
-                       <span class="text-red-600">*</span>
->>>>>>> b6c4b98adfcfa2a0825b81894160ba565f74bf74
                     </label>
                 </div>
                 <div class="flex items-start space-x-1">
                     <input type="checkbox" id="consent2" name="consent2" required
                         class="neu-input mt-1 h- w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500" />
                     <label for="consent" class="text-gray-700 text-sm leading-relaxed">
-<<<<<<< HEAD
                         Registration is subject to mandatory review & final approval by the registration committee.<span
-=======
-                        Registration is Subject to mandatory review & final approval by the registration committee.<span
->>>>>>> b6c4b98adfcfa2a0825b81894160ba565f74bf74
                             class="text-red-600">*</span>
                     </label>
                 </div>
@@ -1341,11 +1310,7 @@ textarea::-webkit-scrollbar-thumb {
                             class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
                     </div>
                     <div>
-<<<<<<< HEAD
                         <label for="designation" class="block text-gray-700 font-medium mb-1"> <span
-=======
-                        <label for="designation" class="block text-gray-700 font-medium mb-1">Designation <span
->>>>>>> b6c4b98adfcfa2a0825b81894160ba565f74bf74
                                 class="text-red-600">#</span></label>
                         <input type="text" id="designation" name="designation" placeholder="Designation" required
                             class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
@@ -1386,11 +1351,7 @@ textarea::-webkit-scrollbar-thumb {
                         <input type="text" id="location" name="location"
                             placeholder="Registered Address (as on GST Certificate)" required
                             class="neu-input w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
-<<<<<<< HEAD
                         <p class="text-gray-500 text-sm mt-1">( Post Exhibition Magazine will be sent here.)</p>
-=======
-                            <p class="text-gray-500 text-sm mt-1">( Post Exhibition Magazine will be sent here.)</p>
->>>>>>> b6c4b98adfcfa2a0825b81894160ba565f74bf74
                     </div>
                     <div>
                         <label for="state" class="block text-gray-700 font-medium mb-1">State <span
@@ -1517,24 +1478,15 @@ textarea::-webkit-scrollbar-thumb {
                 <div class="flex items-start space-x-3">
                     <input type="checkbox" id="consent" name="consent" required
                         class="neu-input mt-1 h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500" />
-<<<<<<< HEAD
                     <label for="consent" class="text-gray-700 text-sm leading-relaxed">
                        I declare that the information provided is true to the bestof the My Knowledge. ICE2025 may cancel my registration if found otherwise.<span class="text-red-600">*</span>
-=======
-                    <label for="consent" class="text-gray-700 text-sm leading-relaxed">I declare that the information provided is true to the best of my Knowledge. ICE2025 may cancel my registration if found otherwise.
-                       <span class="text-red-600">*</span>
->>>>>>> b6c4b98adfcfa2a0825b81894160ba565f74bf74
                     </label>
                 </div>
                 <div class="flex items-start space-x-1">
                     <input type="checkbox" id="consent2" name="consent2" required
                         class="neu-input mt-1 h- w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500" />
                     <label for="consent" class="text-gray-700 text-sm leading-relaxed">
-<<<<<<< HEAD
                         Registration is subject to mandatory review & final approval by the registration committee.<span
-=======
-                        Registration is Subject to mandatory review & final approval by the registration committee.<span
->>>>>>> b6c4b98adfcfa2a0825b81894160ba565f74bf74
                             class="text-red-600">*</span>
                     </label>
                 </div>
@@ -1551,86 +1503,97 @@ textarea::-webkit-scrollbar-thumb {
 
     <!-------------------------------------------- End Hero Section ------------------------------------------------------->
     <!--------------------------------------- Footer Section ----------------------------------------------------------->
-    <div class="">
-        <section class="w-full flex justify-center items-center py-6 px-4 relative">
-            <img alt="Background image showing a group of people in a business event or trade show setting"
-                class="absolute inset-0 w-full h-full object-cover opacity-90" height="150"
-                src="https://storage.googleapis.com/a1aa/image/92cdd8d4-7fb7-48f9-4010-fb79b3ff216a.jpg" width="1920" />
-            <h2
-                class="relative text-center text-[#ffff] text-lg sm:text-xl md:text-2xl font-semibold max-w-4xl text-shadow: 1px 1px 2px gray;">
-                Join India's Most Comprehensive B2B Trade Show and Propel Your Business to New Heights!
-            </h2>
-        </section>
-        <footer
-            class="bg-gradient-to-b from-[#5194c8] to-[#002366] text-white py-10 px-6 sm:px-12 flex flex-col sm:flex-row justify-between max-w-full mx-auto">
-            <div class="mb-8 sm:mb-0 sm:w-1/3">
-                <h3 class="font-bold text-lg mb-4">
-                    Quick Links
-                </h3>
-                <ul class="text-xs leading-5 space-y-1">
-                    <li><a href="./index.html">
-                            Home</a>
-                    </li>
-                    <li><a href="./event_registration.html"
-                            class="hover:text-indigo-400 transition">Event_Registrations</a>
-                    </li>
-                    <li><a href="./Stall_Booking.php">
-                            Stall Booking</a>
-                    </li>
-                    <li><a href="./admin_login.php">
-                            Admin Dashboard</a>
-                    </li>
-                    <li><a href="./Conference.html">
-                            Conference</a>
-                    </li>
-                    <li><a href="./index.html">
-                            Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="mb-8 sm:mb-0 sm:w-1/3">
-                <h3 class="font-bold text-lg mb-4">
-                    Direction Map
-                </h3>
-                <img alt="Google map showing location of Hall no 6 with nearby roads and landmarks"
-                    class="w-[200px] h-[180px] object-cover" height="180"
-                    src="https://storage.googleapis.com/a1aa/image/80d4debe-2b02-488e-6815-8fe15bdb7373.jpg"
-                    width="200" />
-            </div>
-            <div class="sm:w-1/3 flex flex-col ">
-                <h3 class="font-bold text-lg mb-4">
-                    Contact Us
-                </h3>
-                <p class="text-xs leading-5 space-y-1">
-                    <span class="flex items-center justify-start gap-2 mb-1">
-                        <i class="fas fa-home">
-                        </i>
-                        L-3, MULTIPURPOSE HALL BHARAT MANDAPAM <br>
-                        CONVENTION CENTRE PRAGATI MAIDAN NEW DELHI 110001<br>
-                        26-27-28 NOVEMBER 2025 10:00AM TO 6:00PM
-                    </span>
-                    <span class="flex items-center justify-start gap-2 mb-1">
-                        <i class="fas fa-envelope">
-                        </i>
-                        info@infraconnectindia.com
-                    </span>
-                    <span class="flex items-center">
+  <div class="">
+    <section class="w-full flex justify-center items-center py-6 px-4 relative">
+      <img alt="Background image showing a group of people in a business event or trade show setting"
+        class="absolute inset-0 w-full h-full object-cover opacity-90" height="150"
+        src="https://storage.googleapis.com/a1aa/image/92cdd8d4-7fb7-48f9-4010-fb79b3ff216a.jpg" width="1920" />
+      <h2
+        class="relative text-center text-[#ffff] text-lg sm:text-xl md:text-2xl font-semibold max-w-4xl text-shadow: 1px 1px 2px gray;">
+        Join India's Most Comprehensive B2B Trade Show and Propel Your Business to New Heights!
+      </h2>
+    </section>
+    <footer
+      class="bg-gradient-to-b bg-[#0145f2] text-white py-10 px-6 sm:px-12 flex flex-col sm:flex-row justify-between max-w-full mx-auto">
+      <div class="mb-8 sm:mb-0 sm:w-1/3">
+        <h3 class="font-bold text-lg mb-4">
+          Quick Links
+        </h3>
+        <ul class="text-xs leading-5 space-y-1">
+          <li><a href="./index.html">
+              Home</a>
+          </li>
+          <li><a href="./event_registration.html" class="hover:text-indigo-400 transition">Event_Registrations</a>
+          </li>
+          <li><a href="./index.html">
+              Stall Booking</a>
+          </li>
+          <li><a href="./admin_login.php">
+              Admin Dashboard</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mb-8 sm:mb-0 sm:w-1/3">
+        <h3 class="font-bold text-lg mb-4">
+          Venue:
+        </h3>
+        <h6><span class="flex items-center justify-start gap-2 mb-1">
+            
+         ⟟  Hall no. L3, Multipurpose Hall, Bharat Mandapam - Convention Centre, Pragati maidan, New Delhi - 110001 (India)</span></h6></br>
+        <h3 class="font-bold text-lg mb-4">
+          Date & Time:
+        </h3>
+        <h6><span class="flex items-center justify-start gap-2 mb-1">
+            <i class="fas fa-calendar">
+            </i>
+           26, 27 & 28 November 2025</span></h6></br>
+        <h6><span class="flex items-center justify-start gap-2 mb-1">
+            <i class="fas fa-clock">
+            </i>
+           10:00 AM - 06:00 PM ( Daily )</span></h6>
+      </div>
+      <div class="mb-8 sm:mb-0 sm:w-1/3">
+        <h3 class="font-bold text-lg mb-4">
+          Direction Map
+        </h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.3390942178958!2d77.2399441761572!3d28.619597484666954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce328e21150a5%3A0x1db02b6d0ba0702a!2sBharat%20Mandapam!5e0!3m2!1sen!2sin!4v1755777556327!5m2!1sen!2sin" width="200" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="sm:w-1/3 flex flex-col ">
+        <h3 class="font-bold text-lg mb-4">
+          Contact Us
+        </h3>
+        <h6><span class="flex items-center justify-start gap-2 mb-1">
+            
+         🏠︎︎ BluMart Global LLP</BR> 32A, JD- Block, Pitampura, New Delhi- 110034</span></h6></br>
+        <p class="text-xs leading-5 space-y-1">
+          
+          <span class="flex items-center justify-start gap-2 mb-1">
+            <i class="fas fa-envelope">
+            </i>
+            info@infraconnectindia.com
+          </span>
+          <span class="flex items-center gap-2 mb-1">
                         <i class="fas fa-phone">
                         </i>
-                        +91 98635123XX
+                         Phone +91 8448796635
                     </span>
-                </p>
-            </div>
-        </footer>
-        <div class="bg-white text-center text-xs text-gray-700 py-2">
-            Copyright © 2025 Infra Connect Expo ( ICE 2025 ) | Designed & Developed by BluMart Global LLP
-        </div>
-        <button aria-label="Scroll to top" class="fixed bottom-2 right-2 bg-black text-white p-1 rounded-sm"
-            onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-            <i class="fas fa-angle-up">
-            </i>
-        </button>
+                    <span class="flex items-center gap-2 mb-1">
+                        <i class="fas fa-phone">
+                        </i>
+                        WhatsApp +91 8448796635
+                    </span>
+        </p>
+      </div>
+    </footer>
+    <div class="bg-white text-center text-xs text-gray-700 py-2">
+      Copyright © 2025 Infra Connect Expo ( ICE 2025 ) | Designed & Developed by BluMart Global LLP
     </div>
+    <button aria-label="Scroll to top" class="fixed bottom-2 right-2 bg-black text-white p-1 rounded-sm"
+      onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+      <i class="fas fa-angle-up">
+      </i>
+    </button>
+  </div>
     <!--------------------------------------- End Footer Section ------------------------------------------------------->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
