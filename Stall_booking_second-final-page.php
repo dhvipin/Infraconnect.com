@@ -6,13 +6,23 @@ $selected_cluster = isset($_POST['selected_cluster']) ? $_POST['selected_cluster
 
 // Define cluster pricing and optional images
 $clusters = [
-    "Platinum Avenue" => ["price" => "₹2,50,000 - ₹4,00,000", "image" => "clusters/platinum-avenue.jpg"],
-    "Innovation Boulevard" => ["price" => "₹1,80,000 - ₹3,20,000", "image" => "clusters/innovation-boulevard.jpg"],
-    "Growth Gateway" => ["price" => "₹1,50,000 - ₹2,80,000", "image" => "clusters/growth-gateway.jpg"],
-    "Visionary Square" => ["price" => "₹1,20,000 - ₹2,50,000", "image" => "clusters/visionary-square.jpg"],
-    "Rising Leaders Lane" => ["price" => "₹1,00,000 - ₹2,00,000", "image" => "clusters/rising-leaders-lane.jpg"],
-    // Add remaining clusters here...
-];
+                "LEADERS" => ["price" => "₹55,555.56 - ₹1,38,888.89", "image" => "./images/platinum-avenue.jpg"],
+                "CHAMPIONS" => ["price" => "₹72,222.22 - ₹72,222.22", "image" => "./images/innovation-boulevard.jpg"],
+                "FRONTIERS" => ["price" => "₹83,333.33 - ₹1,38,888.89", "image" => "./images/growth-gateway.jpg"],
+                "MAVERICKS" => ["price" => "₹83,333.33 - ₹1,94,444.44", "image" => "./images/visionary-square.jpg"],
+                "MARVELS" => ["price" => "₹83,333.33 - ₹1,66,666.67", "image" => "./images/rising-leaders-lane.jpg"],
+                "AMIGOS" => ["price" => "₹83,333.33 - ₹1,11,111.11", "image" => "./images/platinum-avenue.jpg"],
+                "HEROS" => ["price" => "₹83,333.33 - ₹1,11,111.11", "image" => "./images/innovation-boulevard.jpg"],
+                "LIONS" => ["price" => "₹1,11,111.11 - ₹1,66,666.67", "image" => "./images/growth-gateway.jpg"],
+                "RHINOS" => ["price" => "₹1,11,111.11 - ₹1,94,444.44", "image" => "./images/visionary-square.jpg"],
+                "ZUNO" => ["price" => "₹3,33,333.33 - ₹4,44,444.44", "image" => "./images/rising-leaders-lane.jpg"],
+                "DUKE" => ["price" => "₹2,05,882.35 - ₹3,52,941.18", "image" => "./images/platinum-avenue.jpg"],
+                "SHARKS" => ["price" => "₹2,05,882.35 - ₹3,52,941.18", "image" => "./images/innovation-boulevard.jpg"],
+                "MASTERS" => ["price" => "₹3,52,941.18 - ₹5,29,411.76", "image" => "./images/growth-gateway.jpg"],
+                "PHANTOMS" => ["price" => "₹3,52,941.18 - ₹4,70,588.24", "image" => "./images/visionary-square.jpg"],
+                "TYCOONS" => ["price" => "₹4,11,764.71 - ₹6,29,411.76", "image" => "./images/rising-leaders-lane.jpg"],
+                "LEGENDS" => ["price" => "₹4,70,588.24 - ₹5,88,235.29", "image" => "./images/platinum-avenue.jpg"]
+            ];
 
 // Fallback if cluster not found
 $selected_price = isset($clusters[$selected_cluster]) ? $clusters[$selected_cluster]['price'] : "Price not available";
@@ -538,7 +548,7 @@ $selected_image = isset($clusters[$selected_cluster]) ? $clusters[$selected_clus
         <!-- Hall Layout Image -->
         <div class="bg-white rounded-xl shadow-md p-4">
             <h3 class="text-lg font-semibold text-gray-800 mb-2">Hall Layout</h3>
-            <img src="hall-layout.jpg" alt="Hall Layout" class="rounded-lg border w-full">
+            <img src="./images/103. Hall_Layout_Final_R0_Website.jpeg" alt="Hall Layout" class="rounded-lg border w-full">
         </div>
 
         <!-- Updated Booking Chart Image -->
@@ -551,13 +561,6 @@ $selected_image = isset($clusters[$selected_cluster]) ? $clusters[$selected_clus
         <div class="bg-white rounded-xl shadow-md p-4">
             <h3 class="text-lg font-semibold text-gray-800 mb-2">Stall Cluster & Pricing</h3>
             <img src="<?php echo $selected_image; ?>" alt="Stall Cluster" class="rounded-lg border w-full mb-4">
-            <ul class="list-disc list-inside text-sm text-gray-700">
-                <li><strong>Selected Cluster:</strong> <?php echo $selected_cluster; ?></li>
-                <li><strong>Price Range:</strong> <?php echo $selected_price; ?></li>
-                <li>Premium Visibility Locations</li>
-                <li>Inclusive of Standard Booth Setup</li>
-                <li>Exclusions: Additional Branding, Utilities</li>
-            </ul>
         </div>
     </div>
 
